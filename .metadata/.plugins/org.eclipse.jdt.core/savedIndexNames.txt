@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/Users/ryota0530/university of Tsukuba/coins/B3/software_engineering/.metadata/.plugins/org.eclipse.jdt.core
+45552251.index
+1993042143.index
+1234216054.index
