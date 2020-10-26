@@ -36,12 +36,6 @@ class TreeIterator implements Iterator<Tree> {
 	public Tree next() {
 		Tree node = pop();   // これから調べるノードをpopする．
 		// 子供があれば，将来nextが呼ばれた時に調べるようpushする
-		if(node.right != null) {
-			 push(node.right);
-		}
-		if(node.left != null) {
-			 push(node.left);
-		}
 		
 		return node;         // 最初にpopしたノードを返す．
 	}
