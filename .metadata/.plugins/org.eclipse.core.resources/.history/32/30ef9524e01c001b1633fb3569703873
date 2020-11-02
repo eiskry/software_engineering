@@ -1,0 +1,10 @@
+package task3;
+
+public class PlotStar implements Plot{
+	
+	 // 内側なら"*", 外側なら" "
+	 public void plotInside() { System.out.print("*"); }
+	 public void plotOutside() { System.out.print(" "); }
+	 pulic void nextLine() { System.out.println(); }
+
+}

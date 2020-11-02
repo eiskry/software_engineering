@@ -1,10 +1,10 @@
 package task3;
 
-public class PlotStar extends  StrategyTest{
-	
-	 // 内側なら"*", 外側なら" "
-	 protected void plotInside() { System.out.print("*"); }
-	 protected void plotOutside() { System.out.print(" "); }
-	 protected void nextLine() { System.out.println(); }
-
+public class PlotStar implements Plot{
+	 public void plotInside() { System.out.print("★"); }
+	 public void plotOutside() { System.out.print(" "); }
+	 public void nextLine() { 
+		 System.out.println();
+		 System.out.println();
+	}
 }

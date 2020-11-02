@@ -1,15 +1,15 @@
 package task3;
 
-public class  CircleS extends  StrategyTest {
-	// 左下が(2.0, 2.0) で サイズが 5.0 x 3.0 の長方形
-	 protected boolean inside(double x, double y) {
-	     return 2.0 <= x && x <= 7.0 &&
-	         2.0 <= y && y <= 5.0;
-	 }
-	 // 描画範囲は，xが[0.0, 7.0], 0.25刻み．yが[0.0, 6.0]，0.5刻み．
-	 protected XYRange getRange() {
-	     return new XYRange(0.0, 7.0, 0.25,
-	                        0.0, 6.0, 0.5);
-	 }
-	
+public class  CircleS implements Shape{
+	// 中心(0.0, 0.0)，半径 3.0 の円を描く．
+    public boolean inside(double x, double y) {
+        return -Math.sqrt(9-y*y) <= x && x <= Math.sqrt(9-y*y) &&
+            -3.0 <= y && y <= 3.0;
+    }
+    
+    // 描画範囲は，x が[-5.0, 5.0], 0.25刻み． yが[-5.0, 5.0], 0.5刻み．
+    public XYRange getRange() {
+        return new XYRange(-5.0, 5.0, 0.25,
+                           -5.0, 5.0, 0.5);
+    }
 }
