@@ -1,6 +1,6 @@
 package task3;
 
-public class PlotDot extends  StrategyTest{
+public class PlotDot {
 	// 内側なら"*", 外側なら" "
 	 protected void plotInside() { System.out.print("*"); }
 	 protected void plotOutside() { System.out.print(" "); }

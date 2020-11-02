@@ -1,6 +1,6 @@
 package task3;
 
-public class  CircleS extends  StrategyTest {
+public class  CircleS extends FigureTemplate {
 	// 左下が(2.0, 2.0) で サイズが 5.0 x 3.0 の長方形
 	 protected boolean inside(double x, double y) {
 	     return 2.0 <= x && x <= 7.0 &&
