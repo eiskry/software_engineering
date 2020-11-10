@@ -1,0 +1,5 @@
+package task4;
+
+public interface Observer<E> {
+    public abstract void update(E e);
+}

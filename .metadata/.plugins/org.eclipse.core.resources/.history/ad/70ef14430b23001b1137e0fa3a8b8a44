@@ -1,0 +1,38 @@
+package task4;
+
+public class IndentObserver implements Observer<Entry> {
+	
+	private int countDepth(Entry e) {
+        // 木構造eの中のEntryの数を返す．
+		int depth = 1;
+		for (Entry child : e.getChildren()) {
+			if (e.getChildren() != null) {
+				depth += countDepth(child);
+			}
+		}
+		return depth;
+    }
+	
+	
+//	private int countEntries(Entry e) {
+//        // 木構造eの中のEntryの数を返す．
+//	int count = 1;
+//	for (Entry child : e.getChildren()) {
+//	    count += countEntries(child);
+//	}
+//	return count;
+//    }
+	
+	private void printEntry(Entry e) {
+	       for (Entry child : e.getChildren()) {
+	    	   string name = getName(child);
+	       }
+	    	
+	    }
+    
+    public void update(Entry e) {
+//    	int depth = countEntries(e);
+    	printEntry(e);
+//    	System.out.println(e.size());
+    }
+}

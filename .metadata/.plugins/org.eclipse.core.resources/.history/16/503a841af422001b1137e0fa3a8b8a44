@@ -1,0 +1,32 @@
+package task4;
+
+public abstract class FileSystem {
+    private static FileSystem instance = null;
+    public static FileSystem getInstance() {
+      // 唯一のインスタンスを(必要なら生成して)返す．
+    	
+//    	public final void create(String name){
+//    		void instance = createDirectory(name);
+//    		File instance = createFile(name);
+    	
+//    	if (instance == null) {
+//            instance = new FileSystem();
+//        }
+    	
+//    		return instance;
+    	
+//		public final File create2(String name){
+//    		File instance = createFile(name);
+//    		return instance;
+    	
+//    		Directory instance = createDirectory(String name);
+//    		createFile(name);
+    	
+    	
+   		return instance;
+    	}
+    	
+		public abstract Directory createDirectory(String name);
+		public abstract File createFile(String name);
+}
+

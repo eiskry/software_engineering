@@ -1,0 +1,6 @@
+package task4;
+
+public class Directory2 {
+	private List<Observer> observerList;
+
+}

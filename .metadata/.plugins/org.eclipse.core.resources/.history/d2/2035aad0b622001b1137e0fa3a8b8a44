@@ -1,0 +1,14 @@
+package task4;
+
+import java.util.List;
+import java.util.LinkedList;
+
+public class Directory implements Subject<Entry> {
+    private static List<Observer> observerList = new LinkedList<Observer>();
+    void addObserver(Observer o) {observerList.add(o);}
+    void notifyObservers(o) {
+    	for (Observer observer : observerList) {
+    		observer.update(this);
+    	}
+    }
+}

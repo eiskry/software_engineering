@@ -1,0 +1,23 @@
+package task4;
+
+import java.util.List;
+import java.util.LinkedList;
+
+public class Directory implements Subject<Entry> {
+    private List<Directory> observerList = new LinkedList<Directory>();
+    
+
+	public void addObserver(Observer<Entry> o) {
+		// TODO Auto-generated method stub
+		observerList.add((Directory) o);
+	}
+	
+	public void update(Entry )
+
+	public void notifyObservers(Entry o) {
+		// TODO Auto-generated method stub
+		for (@SuppressWarnings("unused") Entry child : o.getChildren()) {
+			update(o);
+		}
+	}
+}

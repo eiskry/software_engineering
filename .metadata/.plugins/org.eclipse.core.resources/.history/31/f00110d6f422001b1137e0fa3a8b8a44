@@ -1,0 +1,25 @@
+package task4;
+
+import java.util.List;
+import java.util.LinkedList;
+import java.util.Iterator;
+
+public class Directory implements Subject<Entry> {
+	public Directory(String name) {
+		super(name);  // 親クラスのコンストラクタを呼び出す．
+	    }
+    private List<Entry> observerList = new LinkedList<Entry>();
+
+	public void addObserver(Observer<Entry> o) {
+		// TODO Auto-generated method stub
+		observerList.add((Entry) o);
+	}
+
+	public void notifyObservers() {
+		// TODO Auto-generated method stub
+		Iterator<Entry> it = observerList.iterator();
+        while (it.hasNext()) {
+            ((Observer)it.next()).update(this);
+        }
+	}
+}

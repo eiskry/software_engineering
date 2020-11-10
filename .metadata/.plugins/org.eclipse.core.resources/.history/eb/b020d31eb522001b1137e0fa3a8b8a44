@@ -1,0 +1,17 @@
+package task4;
+
+import java.util.List;
+import java.util.LinkedList;
+
+public class Directory extends Entry {
+    public Directory(String name) {
+	super(name);  // 親クラスのコンストラクタを呼び出す．
+    }
+    private List<Entry> children = new LinkedList<Entry>();
+    public List<Entry> getChildren() {
+	return children;
+    }
+    public void addObserver(Entry e) {
+    	children.add(e);
+    }
+}

@@ -1,0 +1,35 @@
+package task4;
+
+import java.util.List;
+import java.util.LinkedList;
+
+//public class Directory  {
+//	// 観察者リストを用意する
+//    private static List<Directory> observerList = new LinkedList<Directory>();
+//    void addObserver(Directory o) {
+//    	observerList.add(o);
+//    }
+//    void notifyObservers(o) {
+//    	for (Observer observer : observerList) {
+//    		observer.update(this);
+//    	}
+//    }
+//}
+
+public class Directory implements Subject<Entry> {
+    private List<Directory> observerList = new LinkedList<Directory>();
+    
+
+	public void addObserver(Observer<Entry> o) {
+		// TODO Auto-generated method stub
+		observerList.add((Directory) o);
+	}
+	
+
+	public void notifyObservers(Entry o) {
+		// TODO Auto-generated method stub
+		for (@SuppressWarnings("unused") Entry child : o.getChildren()) {
+			update(o);
+		}
+	}
+}

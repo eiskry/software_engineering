@@ -1,0 +1,50 @@
+package task4;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.LinkedList;
+
+public class IndentObserver implements Observer<Entry> {
+	
+	private int countDepth(Entry e) {
+        // 木構造eの中のEntryの数を返す．
+		int depth = 1;
+		for (Entry child : e.getChildren()) {
+			if (e.getChildren() != null) {
+				depth += countDepth(child);
+			}
+		}
+		return depth;
+    }
+	
+	
+//	private int countEntries(Entry e) {
+//        // 木構造eの中のEntryの数を返す．
+//	int count = 1;
+//	for (Entry child : e.getChildren()) {
+//	    count += countEntries(child);
+//	}
+//	return count;
+//    }
+	
+	private void printEntry(Entry e) {
+	    for (Entry child : e.getChildren()) {
+	    	   System.out.println(child.getName());
+	    	   printEntry(child);
+	       }
+	    	
+	    }
+	
+
+//	  private void printEntries(int depth, Entry e) {
+//	    
+//	  }
+    
+    public void update(Entry e) {
+//    	int depth = countEntries(e);
+    	System.out.println("root");
+    	printEntry(e);
+    	System.out.println(e.size());
+    }
+}

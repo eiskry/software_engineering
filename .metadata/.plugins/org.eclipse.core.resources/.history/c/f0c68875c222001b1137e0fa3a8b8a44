@@ -1,0 +1,23 @@
+package task4;
+
+import java.util.List;
+import java.util.LinkedList;
+import java.util.Iterator;
+
+
+public class Directory implements Subject<Entry> {
+    private List<Directory> observerList = new LinkedList<Directory>();
+
+	public void addObserver(Observer<Entry> o) {
+		// TODO Auto-generated method stub
+		observerList.add((Directory) o);
+	}
+
+	public void notifyObservers() {
+		// TODO Auto-generated method stub
+		Iterator<Directory> it = observerList.iterator();
+        while (it.hasNext()) {
+            it.next().CountingObserver.update(this);
+        }
+	}
+}
