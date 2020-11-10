@@ -4,7 +4,8 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class IndentObserver implements Observer<Entry> {
-//	
+
+	//深さを調べるメソッド
 //	private int countDepth(Entry e) {
 //        // 木構造eの中のEntryの数を返す．
 //		int depth = 1;
@@ -17,34 +18,34 @@ public class IndentObserver implements Observer<Entry> {
 //    }
 	
 	
-	private int countEn(Entry e) {
-        // 木構造eの中のEntryの数を返す．
-	int count = 1;
-	for (Entry children : e.getChildren()) {
-	    count += countEn(children);
-	}
-	return count;
-    }
+//	Entry名をプリントする
+//	private void printEntries(Entry e) {
+//	    for (Entry child : e.getChildren()) {
+//	    	   System.out.println(child.getName());
+//	    	   printEntries(child);
+//	       }
+//	    	
+//	    }
 	
-	private void printEntry(Entry e) {
+//	字下げして表示するメソッド（未完成）
+	private void printEntries(int depth, Entry e) {
 	    for (Entry child : e.getChildren()) {
-	    	   System.out.println(child.getName());
-	    	   printEntry(child);
+	    	for (int i = 0; i < depth; i++) {
+	    		System.out.print(" ");
+	    	}
+	    	depth = depth + 1;
+	    	System.out.println(child.getName());
+	    	printEntries(depth, child);
+	    	
 	       }
 	    	
 	    }
-	
-
-//	  private void printEntries(int depth, Entry e) {
-//	    
-//	  }
     
     public void update(Entry e) {
-//    	int depth = countDepth(e);
-    	System.out.println(countEn(e));
+    	int depth = 3;
 //    
-//    	System.out.println("root");
-//    	printEntry(e);
-//    	System.out.println(e.size());
+    	System.out.println("root");
+//    	printEntries(e);
+    	printEntries(depth, e);
     }
 }
