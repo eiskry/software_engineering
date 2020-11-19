@@ -5,6 +5,6 @@ public class SenderRule extends Rule{
 		super(command);
 	    }
 	protected boolean check(Message msg) {
-		return msg.getSender().equals( msg.getSender());
+		return msg.getSender().equals();
 	    }
 }
