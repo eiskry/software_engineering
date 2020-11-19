@@ -1,0 +1,11 @@
+package task5;
+
+public class SenderRule extends Rule{
+	private String senderName;
+	public SenderRule(Command command) {
+		super(command);
+	    }
+	protected boolean check(Message msg) {
+		return msg.getSender().equals(senderName);
+	    }
+}

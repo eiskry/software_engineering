@@ -8,13 +8,13 @@ public abstract class Rule {
     	this.command = command;
     }
     
-    protected abstract boolean check(Message msg); //オーバーライドする
+    protected abstract boolean check(Message msg); //　オーバーライドする
     
-    final public Rule setNext(Rule next) {
+    final public Rule setNext(Rule next) { // たらい回し先を設定
     	this.next = next;
     	return next;
     }
-    final public void handle(Message msg) {
+    final public void handle(Message msg) { //　トラブル解決の手順
     	if (check(msg)) {
     		command.run(msg);
     	} else if (next != null) {
