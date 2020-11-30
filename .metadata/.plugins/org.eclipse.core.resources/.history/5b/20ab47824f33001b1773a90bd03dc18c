@@ -1,0 +1,17 @@
+package task6;
+
+public class StringIterator implements Iterator<Charactor> {
+	private String str;
+	private int index = 0;
+	public StringIterator(String s) {
+		str = s;
+	}
+	public boolean hasNext() {
+		return index < str.length();
+	}
+	public Charactor nexr() {
+		return str.charAt(index++);
+	}
+}
+
+	  

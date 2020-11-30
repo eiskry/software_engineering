@@ -1,0 +1,38 @@
+package task6;
+
+import java.util.Iterator;
+
+public class FilterIterator implements Iterator<Character> {
+    private Iterator<Character> original;
+    public FilterIterator(Iterator<Character> original) {
+	this.original = original;
+    }
+    public boolean hasNext() {
+	return original.hasNext();
+    }
+    final int AFTER_SPACE = 1, OTHER = 2;
+    private int state = AFTER_SPACE;
+    public void setState(int newState) {
+	state = newState;
+    }
+    public Character next() {
+	char ch = original.next();
+//	switch (state) {
+//	case AFTER_SPACE:
+//	    if (! Character.isWhitespace(ch)) {
+//		setState(OTHER);
+//	    }
+//	    return ch;
+//	default:
+//	    if (Character.isWhitespace(ch)) {
+//		setState(AFTER_SPACE);
+//		return ch;
+//	    }
+//	    return '.';
+//		}
+    	state.processChar();
+    }
+    public void remove() {
+	original.remove();
+    }
+}

@@ -1,0 +1,7 @@
+package task6;
+
+import java.util.Iterator;
+
+public interface State {
+    public char processChar(FilterIterator f, char ch);
+}
