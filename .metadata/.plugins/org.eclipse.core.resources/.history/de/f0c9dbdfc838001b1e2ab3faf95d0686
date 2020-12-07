@@ -1,0 +1,11 @@
+package task2;
+
+import junit.framework.TestCase;
+
+public class BookTest2 extends TestCase {
+
+	public void testGetName() {
+		fail("Not yet implemented");
+	}
+
+}

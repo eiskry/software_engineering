@@ -1,0 +1,9 @@
+import junit.framework.TestCase;
+
+public class BookTest extends TestCase {
+
+	public void testGetName() {
+		fail("Not yet implemented");
+	}
+
+}
