@@ -36,9 +36,7 @@ public class BookShelfTest extends TestCase {
 			test2[i2] = book.getName();
 			i2 = i2+1;
 		}
-		assertTrue("A"==test2[0] && "C" ==test2[1]);
-		bookShelf.removeAt(0);
-		bookShelf.removeAt(0);
-		assertEquals(0, bookShelf.getLength());
+		assertTrue("A"==test2[0] && "B" ==test2[1] && "C" ==test[2]);
+	}
 	}
 }

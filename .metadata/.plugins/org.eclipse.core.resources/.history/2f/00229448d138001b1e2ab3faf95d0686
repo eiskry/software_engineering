@@ -39,6 +39,5 @@ public class BookShelfTest extends TestCase {
 		assertTrue("A"==test2[0] && "C" ==test2[1]);
 		bookShelf.removeAt(0);
 		bookShelf.removeAt(0);
-		assertEquals(0, bookShelf.getLength());
 	}
 }

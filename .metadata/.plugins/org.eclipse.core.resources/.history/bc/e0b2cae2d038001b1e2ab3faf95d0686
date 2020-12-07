@@ -30,15 +30,6 @@ public class BookShelfTest extends TestCase {
 	public void testRemoveAt() {
 		bookShelf.removeAt(1);
 		assertEquals(2, bookShelf.getLength());
-		String[] test2 = new String [2];
-		int i2 =0;
-		for (Book book : bookShelf) {
-			test2[i2] = book.getName();
-			i2 = i2+1;
-		}
-		assertTrue("A"==test2[0] && "C" ==test2[1]);
-		bookShelf.removeAt(0);
-		bookShelf.removeAt(0);
-		assertEquals(0, bookShelf.getLength());
+		
 	}
 }

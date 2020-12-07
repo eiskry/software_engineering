@@ -21,10 +21,7 @@ public class BookShelf implements Iterable<Book> {
         return new BookShelfIterator(this);
     }
     public void removeAt(int index) {
-    	for (int i = index; i<last-1; i++) {
-    		this.books[i] = getBookAt(i+1);
-    	}
-    	last = last - 1;
+    	
     }
     
 }
