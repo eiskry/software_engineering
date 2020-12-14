@@ -11,16 +11,4 @@ public class TelephoneNumber {
 	public void setAreaCode(String areaCode) {
 		this.areaCode = areaCode;
 	}
-	
-	public String getNumber() {
-		return number;
-	}
-	
-	public void setNumber(String Number) {
-		this.number = Number;
-	}
-	
-	public String getTelephoneNumber() {
-		return getAreaCode() + "-" + getNumber();
-	}
 }

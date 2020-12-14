@@ -24,19 +24,19 @@ public class Person {
 //	return getOfficeAreaCode() + "-" + getOfficeNumber();
     	return officeTelephone.getTelephoneNumber(); 
     }
-//    
-//	private String getOfficeAreaCode() {
-//		return officeTelephone.getAreaCode();
-//	}
+    
+	private String getOfficeAreaCode() {
+		return officeTelephone.getAreaCode();
+	}
 
 	private void setOfficeAreaCode(String officeAreaCode) {
 //		this.officeAreaCode = officeAreaCode;
 		officeTelephone.setAreaCode(officeAreaCode);
 	}
-//
-//	private String getOfficeNumber() {
-//		return officeTelephone.getNumber();
-//	}
+
+	private String getOfficeNumber() {
+		return officeTelephone.getNumber();
+	}
 
 	private void setOfficeNumber(String officeNumber) {
 		officeTelephone.setNumber(officeNumber);

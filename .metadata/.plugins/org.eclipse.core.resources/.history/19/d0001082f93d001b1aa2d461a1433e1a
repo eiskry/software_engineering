@@ -19,8 +19,4 @@ public class TelephoneNumber {
 	public void setNumber(String Number) {
 		this.number = Number;
 	}
-	
-	public String getTelephoneNumber() {
-		return getAreaCode() + "-" + getNumber();
-	}
 }
