@@ -12,6 +12,7 @@ public class Person {
 	this.company = company;
 	this.setOfficeAreaCode();
 	this.officeNumber = officeNumber;
+	officeAreaCode = officeTelephone.setAreaCode();
     }
 
     public String getName() {
