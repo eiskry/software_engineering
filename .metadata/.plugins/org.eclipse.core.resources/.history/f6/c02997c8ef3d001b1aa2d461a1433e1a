@@ -1,0 +1,18 @@
+package task7;
+
+public class TelephoneNumber {
+ private String areaCode;
+ this.areaCode= areaCode;
+}
+
+public String areaCodr() {
+	
+}
+
+public getAreaCode() {
+	return areaCode
+}
+
+public setAreaCode(String areaCode) {
+	this.areaCode = areaCode;
+}
