@@ -1,0 +1,12 @@
+package task7;
+
+import junit.framework.TestCase;
+
+public class PersonTest extends TestCase {
+
+	public void testGetOfficeTelephoneNumber() {
+		Person OfficeAreaCode = new Person("OfficeArea");
+		
+	}
+
+}

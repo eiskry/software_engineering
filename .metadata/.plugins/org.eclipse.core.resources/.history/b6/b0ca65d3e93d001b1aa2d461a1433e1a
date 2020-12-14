@@ -5,7 +5,6 @@ public class Person {
     private String company;         // 勤務先の会社名
     private String officeAreaCode;  // 勤務先の市外局番
     private String officeNumber;    // 勤務先の市内電話番号
-    private TelephoneNumber officeTelephone = new TelephoneNumber();
 
     public Person(String name, String company,
 		  String officeAreaCode, String officeNumber) {
