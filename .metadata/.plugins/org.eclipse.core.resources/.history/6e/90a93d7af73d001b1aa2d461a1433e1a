@@ -29,6 +29,6 @@ public class Person {
 	}
 
 	private void setOfficeAreaCode() {
-		officeAreaCode = officeTelephone.setAreaCode(officeAreaCode);
+		officeAreaCode = officeTelephone.setAreaCode();
 	}
 }

@@ -25,10 +25,10 @@ public class Person {
     }
     
 	private String getOfficeAreaCode() {
-		return officeTelephone.getAreaCode();
+		return officeAreaCode;
 	}
 
 	private void setOfficeAreaCode() {
-		officeAreaCode = officeTelephone.setAreaCode(officeAreaCode);
+		this.officeAreaCode = officeAreaCode;
 	}
 }
