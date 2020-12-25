@@ -1,0 +1,11 @@
+# Fdb version 3
+["dvipdf"] 0 "Untitled.dvi" "Untitled.pdf" "Untitled" 0
+  "Untitled.dvi" 0 -1 0 "latex"
+  (generated)
+  "Untitled.pdf"
+["latex"] 0 "Untitled.tex" "Untitled.dvi" "Untitled" 0
+  "Untitled.aux" 1608863714 8 a94a2480d3289e625eea47cd1b285758 ""
+  "Untitled.tex" 0 -1 0 ""
+  (generated)
+  "Untitled.log"
+  "Untitled.dvi"
