@@ -35,5 +35,5 @@
 1. バージョン管理とバグ追跡
 
 #### Language
-Java
+- Java
 
